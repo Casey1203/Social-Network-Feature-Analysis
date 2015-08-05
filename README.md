@@ -3,8 +3,16 @@ This project aims to find the most importance features towards the detection of 
 
 The dataset is prepared along with the extracted features in "dataset.csv". In this project, we use 22 features.
 
-We use two different model to evaluate the importance of features, which is logistic regression and random forest. All the method are written in the single file.
+We use two different models to evaluate the importance of features, which is logistic regression and random forest. All the method are written in the single file.
 
+In this project, you need to install several open-source third-party package we list here.
+1. Pandas. https://github.com/pydata/pandas
+2. Numpy. https://github.com/numpy/numpy
+3. Scipy. https://github.com/scipy/scipy
+4. sklearn https://github.com/scikit-learn/scikit-learn
+5. Matplotlib https://github.com/matplotlib/matplotlib
+6. plotly https://github.com/plotly
+7. 
 DataSet:
 4815 samples(2473 true news & 2342 rumors)
 
