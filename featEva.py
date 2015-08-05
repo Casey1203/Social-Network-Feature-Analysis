@@ -130,7 +130,11 @@ def linearSVC():
 	print clf.support_
 	featureRanking(abs(clf.coef_[0]), names)
 
-
+'''
+We train a model first using X_train and Y_train. Then use the testset with and without permutation to evaluate the model.
+We can get two different performance. Comparing these two performance, if the differece is large, we think the permuted 
+feature is important.
+'''
 def meanDecreaseAccuracyOnWeibo():
 	X, y, names = loadData()
 	X = [dict(enumerate(sample)) for sample in X]
@@ -249,7 +253,7 @@ def featureRanking(importance, names):
 	# plt.show()
 
 
-elif opt.function == 'meanDecreaseImpurityOnWeibo':
+if opt.function == 'meanDecreaseImpurityOnWeibo':
 	meanDecreaseImpurityOnWeibo()
 elif opt.function == 'logisticR':
 	logisticR()

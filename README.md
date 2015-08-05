@@ -32,4 +32,22 @@ Then enter
  The parameter "function_name" is the name of one function used in the .py file. For example, <pre>python featEva.py -f logisticR</pre> 
  it will round the logistic regression to train model and return the performance of it along with the feature importance rank. Same as <pre>python featEva.py -f meanDecreaseImpurityOnWeibo</pre> that will run the random forest algorithm to train model and use Gini-index to evaluate the importance of features.
 
+## Models
+### Logistic Regression
+We can simply train a linear model by LR algorithm.
+```Python
+lr = LogisticRegression(penalty='l2', C=1.5)# or 'l2'
+```
+In this algorithm, we focus on two parameter to select.
+**penalty**
+    It is used to choose the norm in the regularization. We can choose 'l1' or 'l2'.
 
+**C**
+    Inverse of regularization strength, small value means strong regularization. The default value is 1.0.
+
+### Random Forest
+We can simply train a tree model by RF algorithm.
+```Python
+rf = RandomForestClassifier(n_estimators=500)
+```
+In this algorithm, we only need to care how many trees we want to train by setting the parameter **n_estimators**
