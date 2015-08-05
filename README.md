@@ -39,6 +39,7 @@ We can simply train a linear model by LR algorithm.
 lr = LogisticRegression(penalty='l2', C=1.5)# or 'l2'
 ```
 In this algorithm, we focus on two parameter to select.
+
 **penalty**
     It is used to choose the norm in the regularization. We can choose 'l1' or 'l2'.
 
