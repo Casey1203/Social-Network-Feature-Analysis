@@ -64,7 +64,7 @@ def loadData():
 	return np.asarray(X.values), Y, feature_list
 
 '''
-The subset of dataset is selected by CFS feature selection for removing the inner-correlation between features.
+The subset of dataset is selected by CFS feature selection, power by Weka, for removing the inner-correlation between features.
 This process is necessary if we want to use logistic regression to train models and use it to represent the feature importance.
 '''
 def loadDataSubset():
@@ -249,8 +249,6 @@ def featureRanking(importance, names):
 	# plt.show()
 
 
-if opt.function == 'loadData':
-	loadData()
 elif opt.function == 'meanDecreaseImpurityOnWeibo':
 	meanDecreaseImpurityOnWeibo()
 elif opt.function == 'logisticR':

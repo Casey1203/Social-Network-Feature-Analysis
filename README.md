@@ -5,6 +5,8 @@ This project aims to find the most importance features towards the detection of 
 DataSet:
 4815 samples(2473 true news & 2342 rumors)
 The dataset is prepared along with the extracted features in "dataset.csv". In this project, we use 22 features.
+The original dataset is provided by thesis
+[False Rumors Detection on Sina Weibo by Propagation Structures](http://www.cs.sjtu.edu.cn/~kzhu/papers/kzhu-rumor.pdf)
 
 
 ## Package
@@ -25,6 +27,9 @@ We use two different models to evaluate the importance of features, which is log
 Usage:
 
 Open terminal, locate the current address to where the featEva.py file is.
-Then enter "python featEva.py -f function_name"(without quotation mark). The parameter "function_name" is the name of one function used in the .py file. For example, "python featEva.py -f logisticR" will round the logistic regression to train model and return the performance of it along with the feature importance rank. Same as "python featEva.py -f meanDecreaseImpurityOnWeibo"
+Then enter 
+<pre>python featEva.py -f function_name</pre>
+ The parameter "function_name" is the name of one function used in the .py file. For example, <pre>python featEva.py -f logisticR</pre> 
+ it will round the logistic regression to train model and return the performance of it along with the feature importance rank. Same as <pre>python featEva.py -f meanDecreaseImpurityOnWeibo</pre> that will run the random forest algorithm to train model and use Gini-index to evaluate the importance of features.
 
 
