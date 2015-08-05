@@ -42,7 +42,7 @@ def data_encode(data, feature_name, replace=False):
 
 '''
 Load dataset. If one algorithm can be used when inputs the nominal type features, like decision tree, then the data_encode on
-"verified_type" and "province" doesn't need. Thus, 64 & 65 lines can be commented. This function return X, Y and feature list.
+"verified_type" and "province" doesn't need. Thus, 51 & 52 lines can be commented. This function return X, Y and feature list.
 '''
 
 def loadData():
@@ -62,6 +62,7 @@ def loadData():
 	X = data[feature_list]
 
 	return np.asarray(X.values), Y, feature_list
+
 '''
 The subset of dataset is selected by CFS feature selection for removing the inner-correlation between features.
 This process is necessary if we want to use logistic regression to train models and use it to represent the feature importance.
@@ -186,10 +187,6 @@ def meanDecreaseImpurityOnWeibo():
 	featureRanking(rf.feature_importances_, names)
 
 	return rf.score(X_test, Y_test)
-
-
-
-
 
 '''
 This method is based on the idea that when all features are on the same scale, 
