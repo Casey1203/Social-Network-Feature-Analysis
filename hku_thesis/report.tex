@@ -1,0 +1,21 @@
+\documentclass[oneside]{hkureport}
+
+\begin{document}
+\bibliographystyle{unsrt}
+
+% load author infos
+\include{data/report_info}
+\maketitle
+\contentsmatter
+\tableofcontents
+\mainmatter
+\include{data/introduction}
+\include{data/featureanalysis}
+\include{data/datapreparation}
+\include{data/machinelearningalgorithm}
+\include{data/experimentalresult}
+\include{data/conclusion}
+
+\bibliography{data/myreference}
+
+\end{document}

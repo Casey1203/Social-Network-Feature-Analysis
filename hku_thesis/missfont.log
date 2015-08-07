@@ -1,0 +1,24 @@
+mktexpk --mfmode / --bdpi 600 --mag 1+120/600 --dpi 720 cyberb6b
+mktextfm FandolSong-Regular/ICU
+mktextfm FandolSong-Regular/ICU
+mktextfm FandolSong-Regular/ICU
+mktextfm FandolSong-Bold/ICU
+mktextfm FandolKai/ICU
+mktextfm FandolSong-Bold/ICU
+mktextfm FandolSong-Bold/I/ICU
+mktextfm FandolFang/ICU
+mktextfm FandolFang/ICU
+mktextfm FandolFang/ICU
+mktextfm FandolFang/ICU
+mktextfm FandolFang/B/ICU
+mktextfm FandolFang/ICU
+mktextfm FandolFang/I/ICU
+mktextfm FandolFang/ICU
+mktextfm FandolFang/BI/ICU
+mktexpk --mfmode / --bdpi 600 --mag 1+120/600 --dpi 720 cyberb60
+mktexpk --mfmode / --bdpi 600 --mag 1+120/600 --dpi 720 cyberb5a
+mktexpk --mfmode / --bdpi 600 --mag 1+120/600 --dpi 720 cyberb5a
+mktexpk --mfmode / --bdpi 600 --mag 1+120/600 --dpi 720 cyberb5a
+mktexpk --mfmode / --bdpi 600 --mag 1+120/600 --dpi 720 cyberb5a
+mktexpk --mfmode / --bdpi 600 --mag 1+120/600 --dpi 720 cyberb5a
+mktexpk --mfmode / --bdpi 600 --mag 1+120/600 --dpi 720 cyberb5a
