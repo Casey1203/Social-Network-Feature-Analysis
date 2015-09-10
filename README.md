@@ -36,7 +36,7 @@ Then enter
 ### Logistic Regression
 We can simply train a linear model by LR algorithm.
 ```Python
-lr = LogisticRegression(penalty='l2', C=1.5)# or 'l2'
+lr = LogisticRegression(penalty='l2', C=1.5)# or 'l1'
 ```
 In this algorithm, we focus on two parameter to select.
 
